@@ -1,0 +1,54 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<link rel="stylesheet" href="~/css/home.css">
+<body>
+<div class="text-center">
+    <div class="dictionaryWrapper">
+        <h1>Dictionary Language</h1>
+        <div class="search">
+            <input type="text" placeholder="Search a word" required> <i class="dictionaryIcon fas fa-search"></i>
+            <span class="material-icons">close</span>
+        </div>      
+        <p class="info-text">Type any existing word and press enter to get meaning, example, synonyms, etc.</p>
+        <ul>
+            @* Word *@
+            <li class="dictionaryWord">
+                <div class="dictionaryDetails">
+                    <p>Hello</p>
+                    <span>adjective /həˈloʊ/</span>
+                </div>
+                <i class="fas fa-volume-up"></i>
+            </li>
+            @* Content - Definition *@
+            <div class="dictionaryContent">
+                <li class="dictionaryDefinition">
+                <div class="details">
+                    <p>Definition</p>
+                    <span>Used as a greeting or to begin a phone conversation.</span>
+                </div>
+            </li>
+            @* Example *@
+             <li class="dictionaryExample">
+                <div class="details">
+                    <p>Example</p>
+                    <span>hello there, Katie!</span>
+                </div>
+            </li>
+            <li class="dictionarySynonyms">
+            <div class="details">
+              <p>Synonyms</p>
+              <div class="list">
+                  
+                  <span>glad</span>
+                  <span>glad</span>
+                  <span>glad</span>
+              </div>
+            </div>
+          </li>
+            </div>
+        </ul>
+    </div>
+</div>
+<script src="~/js/home.js"></script>
+</body>
